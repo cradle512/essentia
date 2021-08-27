@@ -1,0 +1,520 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*@font-face declaration*/
+
+@font-face {
+    font-family: 'Decker';
+    src: url("../fonts/Decker/Decker.eot");
+    src: url("../fonts/Decker/Decker.eot?")format("eot"),
+		 url("../fonts/Decker/Decker.woff") format("woff"),
+		 url("../fonts/Decker/Decker.ttf") format("truetype"),
+		 url("../fonts/Decker/Decker.svg#") format("svg");
+		 font-weight:normal;
+		 font-style:normal;
+}
+
+@font-face {
+    font-family: 'Melbourne';
+    src: url('../fonts/Melbourne/Melbourne_reg.eot');
+	src:url("../fonts/Melbourne/Melbourne_reg.eot?") format("eot"),
+		url("../fonts/Melbourne/Melbourne_reg.woff") format("woff"),
+		url("../fonts/Melbourne/Melbourne_reg.ttf") format("truetype"),
+		url("../fonts/Melbourne/Melbourne_reg.svg#Melbourne") format("svg");
+		font-weight:normal;
+		font-style:normal;
+}
+}
+
+/*------------------------
+Navbar
+------------------------*/
+.navbar-brand{
+	padding:13px 15px;
+}
+
+/*------------------------
+Layout
+------------------------*/
+body{
+	background:url(../images/background.jpg) cover;
+}
+
+#welcome{
+	width:100%;
+	height:400px;
+	background:url(../images/background_welcome2.jpg) no-repeat center center;
+	margin:50px 0 0 0;
+}
+
+#heading{
+	margin:125px 0 0 0;
+}
+
+.div1, .div2{
+	opacity:0;
+	filter:alpha(opacity=0);
+}
+
+#heading h1{
+	text-align:center;
+	color:#202020;
+	font:bold 40px 'Decker';
+}
+
+#heading h2{
+	text-align:center;
+	color:#f0f0f0;
+	font:30px 'Decker';
+}
+
+#bigCallout .header{
+	width:100%;
+	background:#0563f1;
+	margin:40px 0 0 0;
+	padding:2px 20px 10px 20px;
+}
+
+#bigCallout .header h2{
+	text-align:center;
+	color:#f0f0f0;
+	border:10px solid #fff;
+	padding:25px;
+	font:bold 40px 'Decker';
+}
+
+.row-centered{
+	text-align:center;
+}
+
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
+
+#bigCallout p{
+	text-align:center;
+	margin:23px 0 0 0;
+	font:21px 'Melbourne';
+}
+
+ul.thumbnails{
+	margin-bottom:20px;
+}
+
+ul.thumbnails li{
+	list-style:none;
+}
+
+li img{
+	width:100%;
+	height:auto;
+	display:block;
+	margin:33px 0 0 -20px;
+}
+
+#wrapper{
+	margin:40px 0 0 0;
+	padding:30px 0;
+	border-top:1px solid #b6b6b6;
+	border-bottom:1px solid #b6b6b6;
+}
+
+#header2{
+	width:100%;
+	height:auto;
+}
+
+#header2 h2{
+	text-align:center;
+	font:bold 35px 'Decker';
+	margin:0 0 0 0;
+}
+
+#about_smp p{
+	font:bold 26px 'Decker';
+	color:#0563f1;
+	text-align:center;
+	margin:5px 0 30px 0;
+}
+
+#features .feature{
+	border-right:1px solid #cecece;
+}
+
+#features .noBorder{
+	border:none;
+}
+
+#features .feature h3{
+	text-align:center;
+	margin:0 0 5px 0;
+	font:bold 17px 'Decker';
+}
+
+#features .feature p{
+	text-align:center;
+	font:18px 'Melbourne';
+}
+
+.panel{
+	margin:0;
+}
+
+#map_wrapper{
+	width:100%;
+	height:300px;
+}
+
+
+
+#map-canvas{
+	width:100%;
+	height:300px;
+	opacity:0;
+}
+
+footer{
+	width:100%;
+	padding:30px 0;
+	border-top:1px solid #b6b6b6;
+}
+
+footer .row{
+}
+
+footer .logo p{
+	margin:5px 0 0 5px;
+	font-size:12px;
+}
+
+.address p{
+	font:bold 20px/16px 'Melbourne';
+}
+
+.address span{
+	margin:0 0 0 30px;
+}
+
+.phone p{
+	font:bold 20px 'Melbourne';
+}
+
+.designer p{
+	float:right;
+	margin:63px 0 0 0;
+	font:15px 'Melbourne';
+}
+
+.row_facebook a img{
+	width:38px;
+	height:38px;
+	margin-left:22%;
+}
+
+.row_facebook img.grayscale {
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
+  filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+}
+
+.row_facebook img.grayscale:hover {
+  filter: none;
+  -webkit-filter: grayscale(0%);
+  -webkit-transition:all ease-in 0.5s;
+  transform:rotate(360deg);
+}
+
+@media (max-width:768px){
+#heading{
+	margin:134px 0 0 0;
+}
+
+#heading h1{
+	font:bold 35px 'Decker';
+}
+	
+#heading h2{
+	font:bold 25px 'Decker';
+	color:#f0f0f0;
+}
+	
+li img{
+	width:50%;
+	height:auto;
+	margin-right:auto;
+	margin-left:auto;
+	margin-bottom:20px;
+}
+
+#header2 h2{
+	margin:10px 0 0 0;
+}
+
+#features .feature{
+	border-right:none;
+}
+
+#features .feature p{
+	margin:0 0 40px 0;
+}
+
+footer .logo img{
+	text-align:center;
+}
+
+footer .logo p{
+	margin:5px 0 0 5px;
+	font-size:11px;
+	text-align:center;
+	margin:5px 0 40px 0;
+}
+
+.logo img.centered{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.address{
+}
+
+.address p{
+	text-align:center;
+	font:bold 20px/16px 'Melbourne';
+}
+
+.address span{
+	margin:0 0 0 24px;
+}
+
+.phone p{
+	text-align:center;
+	font:bold 20px 'Melbourne';
+	margin:0 10px 0 0;
+}
+
+.designer{
+}
+
+.designer p{
+	float:none;
+	margin:40px 0 0 0;
+	text-align:center;
+	font:15px 'Melbourne';
+}
+
+#rotate img{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;	
+	margin-top:7px;
+}
+
+@media (max-width:480px){
+#heading{
+	margin:104px 0 0 0;
+}
+
+#heading h1{
+	font:bold 35px 'Decker';
+}
+	
+#heading h2{
+	font:bold 20px 'Decker';
+	color:#202020;
+	color:#f0f0f0;
+}
+
+ul.thumbnails{
+}
+
+li img{
+	width:100%;
+	height:auto;
+	margin-bottom:20px;
+	margin-left:-20px;
+}
+
+.header h2{
+	font-size:20px;
+	font-weight:bold;
+}
+
+.header2 h2{
+	font-size:20px;
+	font-weight:bold;
+	margin:0;
+}
+
+#about_smp p{
+	font-size:19px;
+}
+
+#features .feature h3{
+	line-height:25px;
+}
+
+#mapper{
+	height:200px;
+}
+
+#welcome{
+	height:300px;
+	background:url(images/background_welcome2.jpg);
+}
+
+}
+
+@media (min-width:1200px){
+
+}	
+
+}
+
+/* safari3+, chrome1+ */
+@media screen and (-webkit-min-device-pixel-ratio:4:0) {
+#heading{
+	margin:104px 0 0 0;
+}
+
+#heading h1{
+	font:bold 35px 'Decker';
+}
+	
+#heading h2{
+	font:bold 20px 'Decker';
+	color:#f0f0f0;
+}
+
+ul.thumbnails{
+}
+
+li img{
+	width:100%;
+	height:auto;
+	margin-bottom:20px;
+	margin-left:-20px;
+}
+
+.header h2{
+	font-size:20px;
+	font-weight:bold;
+}
+
+.header2 h2{
+	font-size:20px;
+	font-weight:bold;
+	margin:0;
+}
+
+#about_smp p{
+	font-size:19px;
+}
+
+#features .feature h3{
+	line-height:25px;
+}
+
+#rotate img{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+}
+
+/* iPhone / mobile webkit */
+@media screen and (max-device-width:480px){
+#heading{
+	margin:104px 0 0 0;
+}
+
+#heading h1{
+	font:bold 35px 'Decker';
+}
+	
+#heading h2{
+	font:bold 20px 'Decker';
+	color:#202020;
+	color:#f0f0f0;
+}
+
+ul.thumbnails{
+}
+
+li img{
+	width:100%;
+	height:auto;
+	margin-bottom:20px;
+	margin-left:-20px;
+}
+
+.header h2{
+	font-size:20px;
+	font-weight:bold;
+}
+
+.header2 h2{
+	font-size:20px;
+	font-weight:bold;
+	margin:0;
+}
+
+#about_smp p{
+	font-size:19px;
+}
+
+#features .feature h3{
+	line-height:25px;
+}
+}
+
+/*IE 9, IE10*/
+@media screen and (max-width:480px\0) {
+	#heading{
+	margin:124px 0 0 0;
+}
+
+#heading h1{
+	font:bold 35px 'Decker';
+}
+	
+#heading h2{
+	font:bold 25px 'Decker';
+	color:#f0f0f0;
+}
+
+ul.thumbnails{
+}
+
+li img{
+	width:100%;
+	height:auto;
+	margin-bottom:20px;
+	margin-left:-20px;
+}
+
+.header h2{
+	font-size:20px;
+	font-weight:bold;
+}
+
+.header2 h2{
+	font-size:20px;
+	font-weight:bold;
+	margin:0;
+}
+
+#about_smp p{
+	font-size:19px;
+}
+
+#features .feature h3{
+	line-height:25px;
+}
+
+}
